@@ -1,7 +1,7 @@
 [project]
 name = "cats-and-dogs"
 version = "0.1.0"
-description = ""
+description = "Small Pytorch identification Algorithm using Cats_vs_dogs dataset to identify them"
 authors = [
     {name = "Gabriel Coelho",email = "gabriel.oliveira2426@gmail.com"}
 ]
