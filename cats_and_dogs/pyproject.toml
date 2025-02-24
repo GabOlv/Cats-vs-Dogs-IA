@@ -1,0 +1,30 @@
+[project]
+name = "cats-and-dogs"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gabriel Coelho",email = "gabriel.oliveira2426@gmail.com"}
+]
+readme = "README.md"
+requires-python = "^3.12"
+dependencies = [
+    "fastapi[standard] (>=0.115.8,<0.116.0)",
+    "pillow (>=11.1.0,<12.0.0)",
+    "uvicorn (>=0.34.0,<0.35.0)",
+    "matplotlib (>=3.10.0,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+test = "poetry run pytest --cov"
+run = "fastapi dev cats_and_dogs/cats_and_dogs/app.py"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+
