@@ -1,2 +1,2 @@
-# Learning-Artificial-Intelligence
+# Cats-vs-Dogs
 
